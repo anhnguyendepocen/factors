@@ -1,0 +1,69 @@
+%Style
+\documentclass[11pt]{article}
+\usepackage[top=1in, bottom=1in, left=.5in, right=.5in]{geometry}
+\parindent 22pt
+
+%Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{tabularx,ragged2e,booktabs}
+\usepackage{caption}
+%\usepackage[none]{hyphenat}
+\usepackage{fixltx2e}
+\usepackage{threeparttablex}
+\usepackage[capposition=top]{floatrow}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{natbib}
+\definecolor{maroon}{HTML}{990012}
+\usepackage[colorlinks=true,linkcolor=maroon,citecolor=maroon,urlcolor=maroon,anchorcolor==maroon]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usepackage{setspace}
+%\doublespacing
+
+%Functions
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\var}{Var}
+\DeclareMathOperator{\plim}{plim}
+
+%Math Environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+\renewcommand{\rothead}[2][60]{\makebox[9mm][c]{\rotatebox{#1}{\makecell[c]{#2}}}}
+\newcommand{\mr}{\multirow}
+\newcommand{\mc}{\multicolumn}
+
+%Logo
+\AddToShipoutPictureBG{%
+  \AtPageUpperLeft{\raisebox{-\height}{\includegraphics[width=1.5cm]{uchicago.png}}}
+}
+
+%Hypehnation
+\hyphenation{treat-ment}
+\hyphenation{ear-nings}
+
